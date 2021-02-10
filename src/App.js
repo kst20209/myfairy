@@ -9,9 +9,8 @@ import Username from './components/Username';
 class App extends Component{
   constructor(props){
     super(props);
-    this.max_content_id=3;
     this.state={
-      mode:'welcome',
+      username:'admin',
       selected_content_id:2,
       welcome:{title:"Welcome", desc:'Hello, React!'},
       subject:{title:"WEB", sub:"World Wide Web"}, 
@@ -26,7 +25,12 @@ class App extends Component{
   render() {
     
     return (
-      <Main></Main>
+      <div className="App">
+      <Username onSubmit={function(_username){
+        this.setState({username:_username});
+      }.bind(this)}></Username>
+      <h1>Your name is {this.state.username}</h1>
+      </div>
     );
   }
 }
