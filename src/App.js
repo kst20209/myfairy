@@ -2,6 +2,7 @@ import './App.css';
 import React, { Component } from 'react';
 import Main from './components/Main';
 import Enter from './components/Enter';
+import Script from './components/Script';
 import Selector from './components/Selector';
 import Settings from './components/Settings';
 import Username from './components/Username';
