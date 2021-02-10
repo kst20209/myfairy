@@ -1,5 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+import Main from './components/Main';
+import Enter from './components/Enter';
+import Selector from './components/Selector';
+import Settings from './components/Settings';
+import Username from './components/Username';
 
 class App extends Component{
   constructor(props){
@@ -21,8 +26,7 @@ class App extends Component{
   render() {
     
     return (
-      <div>
-      </div>
+      <Main></Main>
     );
   }
 }
